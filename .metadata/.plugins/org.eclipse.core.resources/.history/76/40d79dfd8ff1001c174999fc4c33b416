@@ -1,0 +1,28 @@
+package apis;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Main {
+	public static void main (String[]args) {
+		
+		List<String> listaMercado = new ArrayList<>();
+		
+		listaMercado.add("macarrão");
+		listaMercado.add("pão");
+		listaMercado.add("feijão");
+		listaMercado.add("arroz");
+		listaMercado.add("batata");
+		listaMercado.add("alface");
+		
+		// para ordenar a lista em ordem alfabetica
+		
+		Collections.sort(listaMercado);
+		
+		System.out.println (listaMercado);
+		
+		
+	}
+
+}
