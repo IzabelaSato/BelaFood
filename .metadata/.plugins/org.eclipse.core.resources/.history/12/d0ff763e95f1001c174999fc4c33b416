@@ -1,7 +1,0 @@
-package apis;
-
-import java.util.Set;
-
-public record hashset() implements Set<String> {
-
-}
