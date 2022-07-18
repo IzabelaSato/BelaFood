@@ -11,28 +11,28 @@ public class Lambda {
 	public static void main(String[] args) {
 		
 		System.out.println(" -----------------------");
-		System.out.println("| PROGRAMAÇÃO FUNCIONAL |");
+		System.out.println("| PROGRAMAï¿½ï¿½O FUNCIONAL |");
 		System.out.println(" -----------------------");
 		List<Integer> numbers = new ArrayList<>(List.of(5,3,4,2,1));
 	
 		Comparator<Integer> comparator = (o1, o2) -> -o1.compareTo(o2);
 		numbers.sort(comparator);
 		
-		System.out.println("EXERCÍCIO 1");
-		System.out.println("ORDENAÇÃO DOS NUMEROS USANDO LAMBDA");
+		System.out.println("EXERCï¿½CIO 1");
+		System.out.println("ORDENAï¿½ï¿½O DOS NUMEROS USANDO LAMBDA");
 		System.out.println(numbers);
 		System.out.println();
 		
 		//__________________________________________________________________
 		
-		System.out.println("EXERCÍCIO 2");
-		System.out.println("MULTIPLICAÇÃO USANDO LAMBDA");
+		System.out.println("EXERCï¿½CIO 2");
+		System.out.println("MULTIPLICAï¿½ï¿½O USANDO LAMBDA");
 		Operator op = (x, y) -> x * y;
 		System.out.println(op.execute(5, 3));
 		System.out.println();
 		
 		//__________________________________________________________________
-		System.out.println("EXERCÍCIO 3");
+		System.out.println("EXERCï¿½CIO 3");
 		System.out.println("MOSTRANDO NA TELA SOMENTE OS NOMES COM A LETRA J E EM MINUSCULO");
 		List<String> words = List.of("CARLOS", "JOSE", "JOAO", "JOANA", "MARIA");
 		
@@ -50,7 +50,7 @@ public class Lambda {
 		System.out.println();
 		
 		//____________________________________________________________________
-		System.out.println("EXERCÍCIO 4");
+		System.out.println("EXERCï¿½CIO 4");
 		System.out.println("MOSTRANDO NA TELA UMA SEQUENCIA DE 1 A 20 QUE ESTA SENDO MULTIPLICADA POR 3");
 		int mult = 3;
 		int count = 0;
@@ -63,8 +63,8 @@ public class Lambda {
 		System.out.println();
 		
 		//____________________________________________________________________
-		System.out.println("EXERCÍCIO 5");
-		System.out.println("MOSTRAR A POSIÇÃO DAS LETRAS ACBA");
+		System.out.println("EXERCï¿½CIO 5");
+		System.out.println("MOSTRAR A POSIï¿½ï¿½O DAS LETRAS ACBA");
 		String str = "ACBA";
 		String result = str.chars()
 				.map(i -> i -64)
@@ -75,8 +75,8 @@ public class Lambda {
 		
 		//___________________________________________________________________
 		
-		System.out.println("EXERCÍCIO 6");
-		System.out.println("MOSTRAR NA TELA A MULTIPLICAÇÃO DOS NUMEROS USANDO CLOSURE");
+		System.out.println("EXERCï¿½CIO 6");
+		System.out.println("MOSTRAR NA TELA A MULTIPLICAï¿½ï¿½O DOS NUMEROS USANDO CLOSURE");
 		int []array = List.of(3, 2, 5).stream().mapToInt(Integer:: intValue).toArray();
 		System.out.println (multiply(array));
 	}
